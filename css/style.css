@@ -162,7 +162,7 @@ overflow: hidden;
         transform: translateX(0);
     }
     100% {
-        transform: translateX(calc(-250px * 6));
+        transform: translateX(calc(-250px * 9)); 
     }
     }
 }
@@ -170,14 +170,14 @@ overflow: hidden;
 @media screen and (max-width: 480px) {
     .slide-track {
     width: calc(250px * 4);
-    animation: scroll 8s linear infinite;
+    animation: scroll 30s linear infinite;
     }
     @keyframes scroll {
     0% {
-        transform: translateX(0);
+        transform: translateX(0); 
     }
     100% {
-        transform: translateX(calc(-250px * 3));
+        transform: translateX(calc(-250px * 9));  /* To make sure the last image is shown when user resize to smaller than normal */
     }
     }
 }
@@ -242,6 +242,18 @@ overflow: hidden;
 
 /* end phone section */
 
+/* start categories page  */
+@media screen and (max-width: 576px) {
+    .cat{
+        margin-left:25%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .cat{
+        margin-left:12.5%;
+    }
+}
+/* end categories page  */
 
 /* start contact page */
 .contact{
